@@ -9,14 +9,18 @@ namespace DesignPatterns
 {
     class Program
     {
-        
         static void Main(string[] args)
         {
-            Factory factory = new Factory();
-            Product primerProducto = factory.CreateProduct(1);
-            Product segundoProducto = factory.CreateProduct(2);
+            FactoryMethod();
 
             Console.ReadKey();
+        }
+
+        private static void FactoryMethod()
+        {
+            Factory factory = new Factory();
+            Producto primerProducto = factory.CreateProduct(1);
+            Producto segundoProducto = factory.CreateProduct(2);
         }
     }
 }

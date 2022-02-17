@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.Creational.FabricMethod
 {
-    public class Fish : Product
+    public class Pescado : Producto
     {
-        public Fish(string nombre, float precio) : base(nombre, precio)
+        public Pescado(string nombre, float precio) : base(nombre, precio)
         {
             
         }

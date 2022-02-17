@@ -8,22 +8,22 @@ namespace DesignPatterns.Creational.FabricMethod
 {
     public class Factory
     {
-        Dictionary<int, Product> productDictionary;
+        Dictionary<int, Producto> productDictionary;
 
         public Factory()
         {
-            productDictionary = new Dictionary<int, Product>();
+            productDictionary = new Dictionary<int, Producto>();
 
-            Product product = new Fish("Pescado Azul", 2f);
+            Producto product = new Pescado("Pescado Azul", 2f);
             productDictionary.Add(1, product);
-            product = new Fish("Pescado Rojo", 3f);
-            product = new Yoghurt("Hacendado", 1.3f);
+            product = new Pescado("Pescado Rojo", 3f);
+            product = new Yogur("Hacendado", 1.3f);
             productDictionary.Add(2, product);
         }
 
-        public Product CreateProduct(int key)
+        public Producto CreateProduct(int key)
         {
-            Product product = null;
+            Producto product = null;
  
             productDictionary.TryGetValue(key, out product);
             Console.WriteLine(product.ToString());

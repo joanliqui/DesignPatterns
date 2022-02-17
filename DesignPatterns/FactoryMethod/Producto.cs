@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace DesignPatterns.Creational.FabricMethod
 {
-    public abstract class Product
+    public abstract class Producto
     {
         protected string nombre;
         protected float precio;
 
-        protected Product(string nombre, float precio)
+        protected Producto(string nombre, float precio)
         {
             this.nombre = nombre;
             this.precio = precio;

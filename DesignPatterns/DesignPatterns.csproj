@@ -37,9 +37,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FactoryMethod\Factory.cs" />
+    <Compile Include="FactoryMethod\Yogur.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="FactoryMethod\Pescado.cs" />
-    <Compile Include="FactoryMethod\Product.cs" />
+    <Compile Include="FactoryMethod\Producto.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
