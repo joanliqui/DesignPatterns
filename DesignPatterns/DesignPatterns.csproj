@@ -36,11 +36,29 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FactoryMethod\Factory.cs" />
-    <Compile Include="FactoryMethod\Yogur.cs" />
+    <Compile Include="Creational\AbstractFactory\AncientFactory.cs" />
+    <Compile Include="Creational\AbstractFactory\Cliente.cs" />
+    <Compile Include="Creational\AbstractFactory\IMesa.cs" />
+    <Compile Include="Creational\AbstractFactory\ISilla.cs" />
+    <Compile Include="Creational\AbstractFactory\ISofa.cs" />
+    <Compile Include="Creational\AbstractFactory\MesaAntigua.cs" />
+    <Compile Include="Creational\AbstractFactory\MesaModerna.cs" />
+    <Compile Include="Creational\AbstractFactory\MueblesFactory.cs" />
+    <Compile Include="Creational\AbstractFactory\SillaAntigua.cs" />
+    <Compile Include="Creational\AbstractFactory\SillaModerna.cs" />
+    <Compile Include="Creational\AbstractFactory\ModernFactory.cs" />
+    <Compile Include="Creational\AbstractFactory\SofaModerno.cs" />
+    <Compile Include="Creational\AbstractFactory\SofaAntiguo.cs" />
+    <Compile Include="Creational\Builder\Builder.cs" />
+    <Compile Include="Creational\Builder\Car.cs" />
+    <Compile Include="Creational\Builder\CarBuilder.cs" />
+    <Compile Include="Creational\Builder\Director.cs" />
+    <Compile Include="Creational\FactoryMethod\Factory.cs" />
+    <Compile Include="Creational\FactoryMethod\Yogur.cs" />
+    <Compile Include="Creational\Prototype\Persona.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="FactoryMethod\Pescado.cs" />
-    <Compile Include="FactoryMethod\Producto.cs" />
+    <Compile Include="Creational\FactoryMethod\Pescado.cs" />
+    <Compile Include="Creational\FactoryMethod\Producto.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
